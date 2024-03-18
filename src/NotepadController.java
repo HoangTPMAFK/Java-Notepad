@@ -5,7 +5,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import javax.swing.JDialog;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -132,7 +134,10 @@ public class NotepadController {
 
     @FXML
     void about(ActionEvent event) {
-
+        String info = "Java Notepad\n";
+        info += "Version: 1.0.0\n";
+        info += "Author: Thai Phan Minh Hoang\n"; 
+        JOptionPane.showMessageDialog(null, info, "Java Notepad", JOptionPane.INFORMATION_MESSAGE);
     }
 
     @FXML
